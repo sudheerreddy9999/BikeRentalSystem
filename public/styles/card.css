@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  min-height: 99vh;
+  opacity: 0.9;
+  }
+  main{
+    flex: 1;
+  }
+  header {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes gradient2-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .user_logo{
+    height: 50px;
+  }
+  .logo {
+    height: 50px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  nav button {
+    color: whitesmoke;
+    background-color: #ef8172;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;  
+    margin-left: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    display :inline-block; 
+    box-sizing :border-box; 
+  }
+ 
+  .Main-Bike{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.Bike-Div{
+    width: 340px;
+    height: 450px;
+    background-color: azure;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-right: 70px;
+    margin-top: 100px;
+}
+.Image-Bike{
+    background-color: aqua;
+    border-radius: 10px;
+    width: 340px;
+    height: 200px;
+}
+.img-bike{
+    border-radius: 10px;
+    height: 200px;
+    width: 340px;
+}
+.Bike-Data{
+    margin-left: 20px;
+}
+.Bike-Name{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.Bike1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Bike2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Bike3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+p{
+    font-size: 17px;
+    font-weight: 400;
+}
+footer {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  text-align: center;
+  padding: 10px;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+  .footer-name{
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+   .home-div{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  
+  }
+  .para{
+  height: 300px;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+  
+  }
+  .cardstyle{
+    margin-left: 10px;
+  }
+
+  input[type="text"]{
+    border-radius: 5px;
+    border: 5px;
+    padding: 5px;
+    width: 130px;
+    margin: 5px;
+    display :inline-block; 
+    box-sizing :border-box; 
+  }
+  input[type="text"]:focus {
+    outline: none; /* Remove the outline (blue border) */
+    border: none;  /* Remove the border */
+}
+.Mylabel {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}

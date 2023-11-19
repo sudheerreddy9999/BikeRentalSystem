@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="stylesheet" href="./styles/success.css">
+</head>
+<body>
+    <header>
+        <h2>Bike rental system</h2>
+        <nav>
+            <ul>
+                <li><img src="images/profile.png" class="user_logo" style="margin-right: 10px;"></li>
+                <li class="user-name"><p><span id="user_name"><%=item.user_name%></span></p></li>
+                
+           
+     
+            </ul>
+        </nav>
+     </header>
+
+     <div class="Container-sucess">
+        <div class="main-div">
+            <div class="Matter">
+                <h1 class="Success"> Payment success !</h1>
+                <h1 class="Message">Enjoy and Have a safe Ride</h1>
+            </div>
+            <form action="tohome" method="post" id="myForm">
+                <label style="margin-left: 10%; color: whitesmoke;">           order confirmation will be sent to </label>
+                <input type="text" name="email"  style="background-color: transparent; width: 220px; color: whitesmoke;" value="<%=item.outsideValue1%>" readonly><br>
+           
+             <button type="submit" class="Home-Button" >Home</button>
+            </form>
+            </div>
+         
+     </div>
+     <script>
+        const form = document.getElementById("myForm");
+        const user_nameSpan = document.getElementById("user_name");
+        const user_nameInput = document.createElement("input");
+  
+        user_nameInput.type = "hidden";
+        user_nameInput.name = "user_name";
+        form.appendChild(user_nameInput);
+  
+        // Listen for form submission
+        form.addEventListener("submit", function (event) {
+          const user_name = user_nameSpan.textContent;
+          user_nameInput.value = user_name;
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Page</title>
+  <link rel="stylesheet" type="text/css" href="./styles/payment.css">
+
+</head>
+<body>
+    <header>
+        <h2>Bike rental system</h2>
+        <nav>
+            
+                <p><img src="images/profile.png" class="user_logo" style="margin-right: 10px;" ><%=item.user_name%></span></p>
+                
+        </nav>
+     </header>
+  <div class="Payment-Body">
+   <div class="payment-container">
+    <h1>Payment Details</h1>
+    <form action="success" method="post" id="myForm" enctype="multipart/form-data">
+
+      <div class="form-group">
+        <label for="user_name"><h3>upload driving license</h3></label>
+        <input type="file" name="avatar1" accept =".png, .jpg, .jpeg" style=" width: 200px;" required>
+      </div>
+      
+        <div class="form-group">
+            <label for="user_name"><h3>booking initiated by</h3></label>
+            <input type="text" name="user_name" value="<%=item.user_name%>" readonly>
+          </div>
+        <div class="form-group">
+            <label for="bike_number"><h3>bikeNumber</h3></label>
+            <input type="text" name="bike_number" value="<%=bike.bikenumber%>" readonly>
+          </div>
+          <div class="form-group">
+            <label for="card-date"><h3>rental price</h3></label>
+            <input type="text" id="card-price" name="price" value="<%=bike.price%>" readonly>
+          </div>
+          <div class="form-group">
+            <label for="card-date"><h3>booking date</h3></label>
+            <input type="date" id="card-date" name="bookingdate" placeholder="date" min="" required>
+          </div>
+      <div class="form-group">
+        <label for="card-number"><h3>Card Number</h3></label>
+        <input type="text" id="card-number" name="card_number" placeholder="1234 5678 9012 3456" pattern="[0-9]{13,16}" required>
+      </div>
+      <div class="form-group">
+        <label for="card-name"><h3>Cardholder Name</h3></label>
+        <input type="text" id="card-name" name="card_name" placeholder="John Doe" required>
+      </div>
+      <div class="form-group">
+          <label for="card-expiry"><h3>Expiry Date</h3></label>
+          <input type="text" id="card-expiry" name="card_expiry" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" required>
+        </div>
+        <div class="form-group">
+          <label for="card-cvv"><h3>CVV</h3></label>
+          <input type="text" id="card-cvv" name="card_cvv" placeholder="123" pattern="[0-9]{3,4}" required>
+        </div>
+        <p><input type="checkbox" name="Accept"  required>Accept T&C <a href="./html/bookingT&C.html" target="_blank">click here</a></p>
+         <button type="submit" class="pay-button" >Pay Now</button>
+
+        <p style="color: whitesmoke;">after sucessfull payment  details sent to this  <span id="outsideValue1"><%=item.email%></span></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("myForm");
+const outsideValue1Span = document.getElementById("outsideValue1");
+const outsideValue1Input = document.createElement("input");
+
+outsideValue1Input.type = "hidden";
+outsideValue1Input.name = "outsideValue1";
+form.appendChild(outsideValue1Input);
+
+// Listen for form submission
+form.addEventListener("submit", function (event) {
+  const outsideValue1 = outsideValue1Span.textContent;
+  outsideValue1Input.value = outsideValue1;
+});
+
+</script>
+
+<script>
+  // Get the current date in the format YYYY-MM-DD
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth() + 1; // January is 0!
+  var yyyy = today.getFullYear();
+
+  if (dd < 10) {
+    dd = '0' + dd;
+  }
+
+  if (mm < 10) {
+    mm = '0' + mm;
+  }
+
+  today = yyyy + '-' + mm + '-' + dd;
+
+  // Set the 'min' attribute of the date input to the current date
+  document.getElementById('card-date').min = today;
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+    background: -webkit-linear-gradient(65deg,#A9A9A9 50%, #e4e9fd 50% );;
+  }
+
+header {
+    background-color: #A9A9A9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  }
+   header h3{
+    color: black;;
+  }
+  .logo {
+    height: 50px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  nav button {
+    color: whitesmoke;
+    background-color: #52524E;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;  
+    margin-left: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    display :inline-block; 
+    box-sizing :border-box; 
+  }
+  .My-Div{
+    display: flex;
+    width: 100%;
+  }
+.order-div{
+  height: 500px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+    /* styles.css */
+.styled-table {
+border-collapse: collapse;
+width: 100%;
+margin-left: 30%;
+}
+
+.styled-table caption {
+font-size: 1.5em;
+text-align: center;
+padding: 10px;
+background-color: #f2f2f2;
+}
+
+.styled-table th, .styled-table td {
+border: 2px solid #dddddd;
+text-align: left;
+width: 200px;
+padding: 8px;
+}
+
+.styled-table tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+.styled-table tr:hover {
+background-color: #ddd;
+}
+.footer-div{
+    display: flex;
+}
+footer {
+    background-color: #e4e9fd; 
+display:flex; 
+justify-content:left; 
+align-items:center; 
+height:60px; 
+width:auto; 
+margin-top: 0px;
+margin-bottom: 0px;
+height: 65px;
+}
+
+

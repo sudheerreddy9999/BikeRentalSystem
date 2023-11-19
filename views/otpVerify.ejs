@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bike Rental System</title>
+  <link rel="stylesheet" type="text/css" href="./styles/login.css">
+</head>
+<body>
+<header>
+   <h2>Bike rental system</h2>
+   <nav>
+       <ul>
+        <form action="/submit" method="post">
+          <button type="submit" name="button" value="home">Home</button>
+          <button type="submit" name="button" value="signup">SignUp</button>
+          </form>
+     
+       </ul>
+   </nav>
+</header>
+<div class="main-login">
+  <div class="search-form">
+    <div class="content">
+       <form  action="/otpVerify" method="post">
+          <p class="p">Enter the Opt You recived to your mail Address</p>
+             <input type="text" name= "otp" placeholder="Enter Otp" required> 
+             <input type="text" name = "user_name", placeholder="user_name" value="<%=item.user_name%>" readonly>
+             <input type="text" name="password", placeholder="password">
+              <button type="submit">submit</button>       
+       </form>
+     </div>
+  </div>
+  <div class="footer-div">
+    <footer  >
+      <div class="col-md-4 d-flex align-items-center">
+        <span  class="footer-name">© 2023 Company, Inc</span>
+      </div>
+    </footer> 
+  </div>
+</div>
+</body>
+</html>
+

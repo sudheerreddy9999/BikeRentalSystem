@@ -1,0 +1,121 @@
+body{
+  margin: 0px;
+  height: 100vh;
+  background-image: url("../images/Bike_image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+header {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient2-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Display list items side by side */
+  li {
+    display: inline-block;
+    margin-right: 10px; /* Add some margin for spacing */
+  }
+  .user_logo{
+    height: 50px;
+  }
+    .Container-sucess{
+        display: flex;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-div{
+        height: 340px;
+        position: relative;
+        width: 500px;
+        margin-top: 43px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2), -2px -2px 5px 1px rgba(255, 255, 255, 0.2);
+    
+      }
+      .main-div::before{
+        content: '';
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(5px); /* Adjust the value to control the blur intensity */
+      z-index: -1;
+      }
+      .Home-Button{
+        margin-left: 40%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 45px;
+        width: 90px;
+        border: none;
+        background-color: green;
+        border-radius: 10px;
+        font-size: larger;
+        color: whitesmoke;
+      }
+      .Success{
+        color:green;
+        margin-top: 80px;
+        margin-left: 120px;
+      }
+      .Message{
+        margin-top: 30px;
+        color: whitesmoke;
+        margin-left: 50px;
+      }
+      .smile-image{
+        height: 50px;
+      }
+      input[type="text"]{
+        background-color: antiquewhite;
+        align-items: center;
+        border-radius: 5px;
+        border: 5px;
+        padding: 5px;
+        margin: 5px;
+        display :inline-block; 
+        box-sizing :border-box; 
+      }
+
+      input[type="text"]:focus {
+        outline: none; /* Remove the outline (blue border) */
+        border: none;  /* Remove the border */
+    }

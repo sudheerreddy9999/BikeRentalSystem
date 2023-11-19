@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bike Rental System</title>
+  <link rel="stylesheet" type="text/css" href="./styles/login.css">
+</head>
+<body>
+<header>
+   <h2>Bike rental system</h2>
+   <nav>
+       <ul>
+        <form action="/submit" method="post">
+          <button type="submit" name="button" value="home">Home</button>
+          <button type="submit" name="button" value="signup">SignUp</button>
+          </form>
+     
+       </ul>
+   </nav>
+</header>
+<div class="main-login">
+  <div class="search-form">
+    <div class="content">
+       <form  action="/login" method="post">
+          <p class="p">LOGIN</p>
+             <input type="text" name= "user_name" placeholder="username" required>
+              <input type="password" name="password" placeholder="Password" required>   
+              <button type="submit">Login</button>       
+       </form>
+ 
+
+       <form action="/forgotPassword" method="post"> 
+         <button type="submit" class="forgot_password"  style="background: transparent; color: whitesmoke; font-size: 16px; height: 50px;" > Forgot Pasword ?</button>
+        </form>
+     </div>
+  </div>
+  <div class="footer-div">
+    <footer  >
+      <div class="col-md-4 d-flex align-items-center">
+        <span  class="footer-name">© 2023 Company, Inc</span>
+      </div>
+    </footer> 
+  </div>
+
+  <script>
+    // Check if the page has been loaded before
+    if (localStorage.getItem('pageLoadedBefore')) {
+        // This is the second (or subsequent) page load
+        alert('Please use correct user name and password');
+    } else {
+        // This is the first page load
+        localStorage.setItem('pageLoadedBefore', 'true');
+    }
+  </script>
+  
+</div>
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bike Rental System</title>
+  <link rel="stylesheet" type="text/css" href="./styles/signup.css">
+</head>
+<body>
+<header>
+   <h2>Bike rental system</h2>
+   <nav>
+       <ul>
+        <form action="/submit" method="post">
+          <button type="submit" name="button" value="home">Home</button>
+          <button type="submit" name="button" value="login">login</button>
+          </form>
+       </ul>
+   </nav>
+</header>
+
+<div class="home-div">
+  <div class="para">
+    <h1></h1>
+  </div>
+<div class="search-form">
+    <form action="/signin" method="post">
+        
+        <input type="text" name="user_name" placeholder="username">
+        <input type="text" name="first_name" placeholder="Firstname">
+        <input type="text" name="last_name" placeholder="Lastname">
+        <input type="number" name="mobile_no" placeholder="Mobileno">
+        <input type="email" name="email" placeholder="email">
+        <input type="password" name="password" placeholder="Password">
+        <p><input type="checkbox" name="Accept"  required>Accept T&C <a href="./html/signupT&C.html" target="_blank">click here</a></p>
+        <button type="submit">SignUp</button>
+        <p class="p">Already have an accout? please Login</p>
+    </form>
+</div>
+
+<script>
+  // Check if the page has been loaded before
+  if (localStorage.getItem('pageLoadedBefore')) {
+      // This is the second (or subsequent) page load
+      alert('Please use unique user name');
+  } else {
+      // This is the first page load
+      localStorage.setItem('pageLoadedBefore', 'true');
+  }
+</script>
+
+
+</div>
+<div class="footer-div">
+  <footer  >
+    <div class="col-md-4 d-flex align-items-center">
+      <span  class="footer-name">© 2023 Company, Inc</span>
+    </div>
+  </footer> 
+</div>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bike Rental System</title>
+  <link rel="stylesheet" type="text/css" href="./styles/adminlandingpage.css">
+</head>
+<body>
+<header>
+   <h2>Bike rental system</h2>
+   <nav>
+       <ul>
+        <form action="/Adminlogout" method="post" >
+          <button type="submit" name="button" value="logout" style="margin-right: 30px;">logout</button> 
+        </form>
+       </ul>
+   </nav>
+</header>
+
+<div class="My-Div">
+    <div class="order-div">
+    <table  class="styled-table" style="width:80%">
+        <tr>
+          <th><form action="/adminOrders" method="post">
+            <button type="submit" name="orders" value="orders">Orders</button>
+            </form></th>
+          <th><form action="/bikeupload" method="post">
+            <button type="submit" name="button" value="uploadbike">uploadbike</button>
+            </form></th>
+          <th><form action="/cards" method="post">
+            <button type="submit" name="button" value="bikes">getbike</button>
+            </form></th>
+          <th><form action="/getUsers" method="post">
+            <button type="submit" name="button" value="getusers">Get Users</button>
+            </form></th>
+              <th><form action="/getBikeforstatus" method="post">
+                <button type="submit" name="button" value="getBike">Bike Status</button>
+                </form></th>
+              </form></th>
+              <th><form action="/orderforapproval" method="post">
+                <button type="submit" name="button" value="getBike">order approval</button>
+                </form></th>
+
+        </tr>
+      </table>
+    </div>
+</div>
+<div class="footer-div">
+    <footer  >
+      <div class="col-md-4 d-flex align-items-center">
+        <span  class="footer-name">© 2023 Company, Inc</span>
+      </div>
+    </footer> 
+  </div>
+  
+</div>
+</body>
+</html>

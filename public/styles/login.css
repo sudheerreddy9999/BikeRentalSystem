@@ -1,0 +1,184 @@
+body{
+  margin: 0px;
+  height: 100vh;
+  background-image: url("../images/Bike_image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+header {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient2-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.p{
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+ header h3 ,h2{
+  color: #e4e9fd ;
+}
+.logo {
+  height: 50px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav button {
+  color: whitesmoke;
+  background-color: #ef8172;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;  
+  margin-left: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  display :inline-block; 
+  box-sizing :border-box; 
+}
+.main-login{
+  display: grid;
+  grid-template-rows: 1fr 0.1fr;
+  
+}
+  .search-form {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+    margin-left: 37%;
+    margin-top: 5.2%;
+    margin-bottom: 6%;
+  
+    
+  }
+  .search-form ::before{
+    content: '';
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(5px); /* Adjust the value to control the blur intensity */
+      z-index: -1;
+  }
+  .content{
+  width: 400px;
+  height: 400px;
+    
+  }
+  label{
+    margin-left: 40%;
+  }
+  .search-form input[type="text"],
+  .search-form input[type="datetime-local"], form input[type=password], form input[type=number], form input[type=email] {
+    border-radius: 5px;
+    position: relative;
+      z-index: 1;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+   display: flex;
+   width: 60%;
+   height: 45px;
+   margin-left: 20%;
+   justify-content: center;
+   align-items: center;
+    display :inline-block; 
+    box-sizing :border-box; 
+  }
+  .search-form button[type="submit"] {
+    color: whitesmoke;
+    background-color: #ef8172;
+    border-radius: 5px;
+    border: none;
+    padding: 10px ;
+    width :60%;  
+    height: 45px;
+    font-size: 18px;
+    margin-left: 20%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    display :inline-block; 
+    box-sizing :border-box; 
+  }
+  .search-form p{
+    text-align: center;
+  }
+  .vehicle {
+    height: 100px;
+  }
+  img{
+    height: 100%;
+  }
+  .footer-div {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+    .footer-name{
+      font-size: 18px;
+      color:whitesmoke;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+
+    .custom-alert {
+      padding: 10px;
+      background-color: #ff0000;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+  }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bike Rental System</title>
+  <link rel="stylesheet" type="text/css" href="./styles/landingpage.css">
+</head>
+<body>
+
+<header>
+   <h2>Bike rental system</h2>
+   <nav>
+       <ul>  
+        <form action="/orders" method="post" >
+          <button type="submit" name="button" value="myorders" style="margin-right: 30px;">My Orders</button> 
+           <input type="text" name="user_name" value="<%=item.user_name%>" readonly style="color: whitesmoke; font-size: 17px; width: 190px;">
+        </form>
+        <img src="images/profile.png" class="user_logo" style="margin-right: 10px; height: 60px;">
+        <form action="/logout" method="post" >
+          <button type="submit" name="button" value="logout" style="margin-right: 30px;">logout</button> 
+        </form>
+       </ul>
+   </nav>
+</header>
+
+<div class="home-div">
+  <div class="para">
+  </div>
+<div class="search-form">
+  <h1 >Ready For Ride</h1>
+    <form action="/card" method="post" id="myForm">
+        <select id="dropdown" name="location">
+         <option value="Hyderabad">Hyderabad</option>
+         <option value="Chennai">Chennai</option>
+         <option value="Bangalore">Bangalore</option>
+       </select>
+         <input type="datetime-local" placeholder="Pickup date and time"><br>
+         <input type="text" placeholder="Dropoff location" id="drop-location">
+         <input type="datetime-local" placeholder="Pickup date and time">
+         <button type="submit" value="login">Search</button>
+         <p> heyyy <span id="username"><%=item.user_name%></span> take an ride and enjoy</p>
+     </form>
+</div>
+
+</div>
+
+<script>
+      const form = document.getElementById("myForm");
+      const usernameSpan = document.getElementById("username");
+      const usernameInput = document.createElement("input");
+
+      usernameInput.type = "hidden";
+      usernameInput.name = "username";
+      form.appendChild(usernameInput);
+
+      // Listen for form submission
+      form.addEventListener("submit", function (event) {
+        const username = usernameSpan.textContent;
+        usernameInput.value = username;
+      });
+  const outsideValue1Span = document.getElementById("outsideValue1");
+  const outsideValue1Input = document.createElement("input");
+
+  outsideValue1Input.type = "hidden";
+  outsideValue1Input.name = "outsideValue1";
+  form.appendChild(outsideValue1Input);
+
+  // Listen for form submission
+  form.addEventListener("submit", function (event) {
+    const outsideValue1 = outsideValue1Span.textContent;
+    outsideValue1Input.value = outsideValue1;
+  });
+
+</script>
+
+<div class="footer-div">
+  <footer  >
+    <div class="col-md-4 d-flex align-items-center">
+      <span  class="footer-name">© 2023 Company, Inc</span>
+    </div>
+  </footer> 
+</div>
+
+</body>
+</html>

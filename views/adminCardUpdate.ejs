@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bike Rental System</title>
+  <link rel="stylesheet" type="text/css" href="./styles/cardupload.css">
+</head>
+<body>
+<header>
+   <h2>Bike Rental system</h2>
+   <nav>
+       <ul>
+        <form action="/adminlandingpage"  method="post">
+          <button type="submit" name="button" value="home">AdminHome</button>
+          </form>
+       </ul>
+   </nav>
+</header>
+<div class="home-div">
+
+ 
+  <div class="search-form">
+        <form action="/updateBikeRoute" method="post" >
+          <input type="text" name="bike_name" placeholder="Bikename" value="<%=item[0].bike_name %>">
+            <input type="text" name="price" placeholder="price" value="<%=item[0].price %>">
+            <% const name = item.bike_name %>
+            <% console.log(name); %>
+            <input type="text" name="condition" placeholder="condition" value="<%=item[0].bike_condition %>">
+            <input type="text" name="avilability" placeholder="avilability" value="<%=item[0].availability %>">
+            <input type="text" name="bike_number" placeholder="bike_number" value="<%=item[0].bike_number %>">
+          <button type="submit">Upload</button>
+        </form>
+
+  </div>
+  
+  <div class="para">
+    <h1></h1>
+  </div>
+  
+  </div>
+  <div class="footer-div">
+    <footer  >
+      <div class="col-md-4 d-flex align-items-center">
+        <span  class="footer-name">© 2023 Company, Inc</span>
+      </div>
+    </footer> 
+  </div>
+</div>
+</body>
+</html>

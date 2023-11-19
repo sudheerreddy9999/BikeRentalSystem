@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bike Rental System</title>
+  <link rel="stylesheet" type="text/css" href="./styles/signup.css">
+</head>
+<body>
+<header>
+   <h3>Bike rental system</h3>
+   <nav>
+    <ul>
+      <form action="/adminlandingpage"  method="post">
+        <button type="submit" name="button" value="home">AdminHome</button>
+        </form>
+     </ul>
+   </nav>
+</header>
+
+<div class="home-div">
+  <div class="para">
+  </div>
+<div class="search-form">
+    <form action="/update" method="post">
+        
+        <input type="text" name="user_name" placeholder="username" value="<%=item.user_name%>" readonly>
+        <input type="text" name="first_name" placeholder="Firstname" value="<%=item.first_name%>">
+        <input type="text" name="last_name" placeholder="Lastname" value="<%=item.last_name%>">
+        <input type="number" name="mobile_no" placeholder="Mobileno" value="<%=item.mobile_no%>">
+        <input type="email" name="email" placeholder="email" value="<%=item.email%>">
+        <input type="text" name="password" placeholder="Password" value="<%=item.password%>">
+        <button type="submit">update User</button>
+    </form>
+</div>
+
+
+</div>
+<div class="footer-div">
+  <footer  >
+    <div class="col-md-4 d-flex align-items-center">
+      <span  class="footer-name">© 2023 Company, Inc</span>
+    </div>
+  </footer> 
+</div>
+</body>
+</html>
+

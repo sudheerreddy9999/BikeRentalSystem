@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    min-height: 99vh;
+    opacity: 0.9;
+    }
+    .HeadBod{
+        min-height: 91vh;
+    }
+    main{
+      flex: 1;
+    }
+    header {
+      background-color: #A9A9A9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    
+    }
+    .user_logo{
+      height: 50px;
+    }
+    .logo {
+      height: 50px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin-right: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: black;
+    }
+    button {
+      color: whitesmoke;
+    background-color: #52524E;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;  
+    margin-left: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    display :inline-block; 
+    box-sizing :border-box;  
+    }
+   
+    .Main-Bike{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .Bike-Div{
+      width: 340px;
+      height: 450px;
+      background-color: azure;
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin-right: 70px;
+      margin-top: 100px;
+  }
+  .Image-Bike{
+      background-color: aqua;
+      border-radius: 10px;
+      width: 340px;
+      height: 200px;
+  }
+  .img-bike{
+      border-radius: 10px;
+      height: 200px;
+      width: 340px;
+  }
+  .Bike-Data{
+      margin-left: 20px;
+  }
+  .Bike-Name{
+      margin-top: 5px;
+      margin-left: 5px;
+  }
+  .Book-Button{
+      height: 40px;
+      width: 100px;
+      margin-top: 10px;
+      border: none;
+      background-color: green;
+      margin-left: 100px;
+      border-radius: 5px;
+  }
+  .Bike1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .Bike2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .Bike3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  p{
+      font-size: 17px;
+      font-weight: 400;
+  }
+  footer {
+    background-color: #e4e9fd ; 
+    display:flex; 
+    justify-content:left; 
+    align-items:center; 
+    height:60px; 
+    width:100%; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 65px;
+    color: #a683e3
+    }
+    .footer-name{
+      font-size: 18px;
+      color: black;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+     .home-div{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    
+    }
+     form input[type=file]{
+        border-radius: 5px;
+        border: 10px;
+        padding: 15px;
+        display :inline-block; 
+        box-sizing :border-box; 
+      }
+    .para{
+    height: 300px;
+      margin-top: 15%;
+      margin-left: 10%;
+      margin-right: 10%;
+    
+    }
+    .cardstyle{
+      margin-left: 10px;
+    }
+  
+    input[type="text"]{
+      border-radius: 5px;
+      border: 5px;
+      padding: 5px;
+      width: 130px;
+      margin: 5px;
+      display :inline-block; 
+      box-sizing :border-box; 
+    }
+    input[type="text"]:focus {
+      outline: none; /* Remove the outline (blue border) */
+      border: none;  /* Remove the border */
+  }
+  .Mylabel {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .Book-Button{
+    margin-left: 100px;
+  
+  }
+  input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
